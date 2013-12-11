@@ -23,65 +23,6 @@ function my_widgets_init() {
 	'after_title' => '</h4>',
 	));
 
-	//this is for the homepage reliability info
-	register_sidebar(array(
-	'name' => __( 'Plan Home-Page' ),
-	'id' => 'plan',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h5>',
-	'after_title' => '</h5>',
-	));
-
-	//this is for the efficient bit on the home page
-	register_sidebar(array(
-	'name' => __( 'Produce Home-Page' ),
-	'id' => 'produce',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h5>',
-	'after_title' => '</h5>',
-	));
-
-	//this is for the precise bit on the home page
-	register_sidebar(array(
-	'name' => __( 'Deploy Home-Page' ),
-	'id' => 'deploy',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h5>',
-	'after_title' => '</h5>',
-	));
-
-	//this is for the news letter
-	register_sidebar(array(
-	'name' => __( 'Footer News-Letter' ),
-	'id' => 'footer-news-letter',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h4>',
-	'after_title' => '</h4>',
-	));
-
-	//this is for the follow us section
-	register_sidebar(array(
-	'name' => __( 'Footer Follow-Us' ),
-	'id' => 'footer-follow-us',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h4>',
-	'after_title' => '</h4>',
-	));
-
-	//this is for the follow us section
-	register_sidebar(array(
-	'name' => __( 'Portfolio Widgets' ),
-	'id' => 'portfolio',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h4>',
-	'after_title' => '</h4>',
-	));
 }
 add_action( 'init', 'my_widgets_init' );
 

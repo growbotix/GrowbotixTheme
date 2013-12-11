@@ -28,7 +28,6 @@
   ?></title>
 
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.css" />
-  
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/foundation.css" />
 
 
@@ -40,7 +39,6 @@
   <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
   <?php wp_head(); ?>
-  <link href='http://fonts.googleapis.com/css?family=Share+Tech|Architects+Daughter|Orbitron' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
   <script src="<?php bloginfo('template_url'); ?>/js/vendor/custom.modernizr.js"></script>
 
@@ -51,7 +49,7 @@
     <div id="header" class="inner-bezell small-13 columns">
       <div id="logo-wrapper" class="small-13 columns">
         <div id="logo" class=" small-9 small-centered small-centered large-7 large-offset-4 columns">
-          <a href="Http://www.radatom.com">
+          <a href="">
             <?php
             if(is_front_page()){
               echo '<h1 class="heading-text">'.get_bloginfo('name').'</h1>';
@@ -65,33 +63,9 @@
       </div>
       
       <div id="header-stuff" class="small-13 columns">
-
-        <div id="navs-buttons" class="small-13 large-3 columns">
-        </div>
-
-        <div id="navs" class="hide-for-small small-13 large-10 columns">
-          <div id="social-icons"  class="large-13 columns">
-            <ul class="small-block-grid-3">
-              <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/facebook-icon.png" alt="Follow Us On Facebook!"></a></li>
-              <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png" alt="Follow Us On Twitter!"></a></li>
-              <li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/linkedin-icon.png" alt="Follow Us On LinkedIn!"></a></li>
-            </ul>
-          </div>
-
           <div id="header-menu" class="large-13 columns">
-            <?php wp_nav_menu( array( 'menu_class' => 'button-group','theme_location' => 'menu-header', 'container'     => 'nav',
-    'container_id'      => 'top-navigation-primary',
-    'conatiner_class'   => 'top-navigation',
-    'menu_class'        => '', 
-    'echo'          => true,
-    'items_wrap'        => '<ul id="%1$s" class="%2$s button-group radius ">%3$s</ul>',
-    'depth'         => 10, 
-    'walker'        => new themeslug_walker_nav_menu) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'menu-header' ) ); ?>
           </div>
-
-          
-        </div>
-          
       </div>
     </div>
   </div>

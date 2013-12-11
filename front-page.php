@@ -59,20 +59,6 @@ get_header();
 	</div>
 </div>
 
-
-<div class="row bezelled" id="portfolio-wrapper">
-	<div class="inner-bezell small-13 columns" id="portfolio-wdiget" >
-		<?php 
-		if ( dynamic_sidebar('portfolio') ) : 
-		else : 
-		?>
-		<?php endif; ?>
-
-
-		<?php get_template_part( 'closingcta' );?>
-	</div>
-</div>
-
 <?php 
 //this would go here in order ot put the sidebar on the right
 //get_sidebar();
